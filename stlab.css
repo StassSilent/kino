@@ -1,0 +1,54 @@
+
+.star input:checked ~ label, .star label, .star label:hover, .star label:hover ~ label {
+  background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+}
+
+.star  {
+  
+  /*fix floating problems*/
+ /* overflow: hidden;*/
+  *zoom: 1;
+  /*end of fix floating problems*/
+  
+ /* position: relative;*/
+  float: left;
+}
+
+.star  input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  
+  width: 43px;
+  height: 40px;
+  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.star  input:checked ~ label {
+  /*background-position: 0 -40px;*/
+  height: 40px;
+  width: 43px;
+}
+.pd{
+	padding-top: 20px;
+	border-left-color: black;
+}
+.star  label {
+  /*background-position: 0 0;*/
+  height: 40px;
+  width: 43px;
+  float: center;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.star  label:hover, .star label:hover ~ label {
+ /* background-position: 0 -40px;*/
+  height: 40px;
+  width: 43px;
+}
